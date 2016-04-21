@@ -1,0 +1,24 @@
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+  &#menu {
+    left: calc(50% - 200px);
+    g {
+      cursor: pointer;
+    }
+  }
+  &#embroidery {
+    left: calc(50% - 400px);
+    width: 800px;
+    height: 400px;
+  }
+  &#background {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

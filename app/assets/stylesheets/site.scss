@@ -1,0 +1,99 @@
+.logo {
+  width: 40px;
+  height: 50px;
+  margin: calc(50% - 25px);
+  background: white;
+  border-radius: 25px;
+  border-left: 10px solid wheat;
+}
+.content {
+  position: absolute;
+  margin-left: 140px;
+  width: calc(100% - 180px);
+  height: 100%;
+  padding: 20px;
+}
+.header-img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+
+  h2 {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+  }
+
+  &.red {
+    background: indianred;
+    h2 { color: wheat; }
+  }
+  &.blue {
+    background: deepskyblue;
+    h2 { color: palegreen; }
+  }
+  &.orange {
+    background: coral;
+    h2 { color: lightyellow; }
+  }
+  &.green {
+    background: mediumseagreen;
+    h2 { color: aquamarine; }
+  }
+}
+.card {
+  padding: 5px 15px;
+  background: white;
+  border: 1px solid gainsboro;
+  box-shadow: 0 0 1px gainsboro;
+  margin: 5px 0;
+
+  &.text {
+    padding: 0px;
+    p {
+      padding: 15px 25px;
+      margin: 0;
+      font-size: 18px;
+      border-left: 6px solid indianred;
+    }
+  }
+}
+nav.site-menu {
+  float: left;
+  background: #334;
+  height: 100%;
+  width: 100px;
+  padding: 20px;
+  margin: 0;
+
+  ul {
+    list-style-type: none;
+    font-size: 20px;
+    color: silver;
+    padding-left: 0;
+
+    li {
+      transition: padding-left 0.2s;
+      cursor: pointer;
+      margin: 5px;
+      margin-left: -15px;
+      padding-left: 15px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:hover,
+      &.active {
+        border-left: 2px solid white;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+    color: white;
+  }
+}

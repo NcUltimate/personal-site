@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title PersonalSite
+    %link{ href: 'https://fonts.googleapis.com/css?family=Raleway:300', rel: 'stylesheet', type: 'text/css' }
+    %meta{content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name: 'viewport'}
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %nav.site-menu
+      .logo
+      %h1 JoeKle.men
+      %ul
+        %li{ class: @active[:bio] }
+          = link_to 'Bio', bio_path
+        %li{ class: @active[:blog] }
+          = link_to 'Blog', blog_path
+        %li{ class: @active[:cv] }
+          = link_to 'CV', cv_path
+        %li{ class: @active[:github] }
+          = link_to 'GitHub', github_path
+        %li{ class: @active[:seo] }
+          = link_to 'SEO', seo_path
+    .content
+      = yield
