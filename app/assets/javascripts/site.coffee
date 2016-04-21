@@ -6,5 +6,18 @@ Main = {
 }
 $.jklemen = $.extend($.jklemen, Main)
 
-$ -> $.jklemen.initialize()
+$ -> 
+  if $(window).width() <= 480
+    setTimeout(->
+      $('.site-menu').addClass('hidden')
+    , 500)
+
+  $(document).on 'click', '.hamburger', (e) ->
+      $('.site-menu').toggleClass('hidden')
+
+  $(window).on 'resize', (e) ->
+    if $(window).width() <= 480
+      $('.site-menu').addClass('hidden')
+    else
+      $('.site-menu').removeClass('hidden')
 
