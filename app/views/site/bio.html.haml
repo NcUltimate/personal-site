@@ -1,17 +1,29 @@
-.header-img.red
-  %h2.title About Me
-%hr
-.card.text.span12
-  %p I love problem solving, which is probably why I naturally became addicted to programming and algorithmic analysis. The thrill of encountering a real-world problem and identifying a computational way to solve it is undeniably exciting. Furthermore, being able to employ these methods into building a website or making a professional looking application is a rewarding achievement in itself. That is why I strive for versatility in design by constantly learning new techniques in web, software and mobile development. I also appreciate the underlying complexity of the methods, back-ends and algorithms that each of these platforms are built on.
-.card.span3
-  %p Hello
-.card.span9 
-  %p There
-.card.span4
-  %p Dear
-.card.span4
-  %p Dear
-.card.span4
-  %p Dear
-.card.span12
-  %p Matey
+.row
+  .header-img.red
+    %h2.title About Me
+.row
+  .card.col-xs-4
+    .hidden-xs
+      = fa_icon 'github'
+      = link_to 'GitHub', 'https://www.github.com/ncultimate'
+    .visible-xs
+      = link_to fa_icon('github'), 'https://www.github.com/ncultimate'
+  .card.col-xs-4
+    .hidden-xs
+      = fa_icon 'twitter'
+      = link_to 'Twitter', 'https://twitter.com/hi_jklmn'
+    .visible-xs
+      = link_to fa_icon('twitter'), 'https://twitter.com/hi_jklmn'
+  .card.col-xs-4
+    .hidden-xs
+      = fa_icon 'linkedin'
+      = link_to 'LinkedIn', 'https://www.linkedin.com/in/joseph-klemen-450a8480'
+    .visible-xs
+      = link_to fa_icon('linkedin'), 'https://www.linkedin.com/in/joseph-klemen-450a8480'
+.row
+  .card.me.col-xs-3.col-md-2
+    = image_tag 'me'
+  .card.title.col-xs-9.col-md-10
+    %p Joseph M. Klemen
+    %p Purdue University, Class of 2015
+    %p MS, BS - Computer Science

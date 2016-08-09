@@ -1,25 +1,32 @@
 .logo {
-  width: 40px;
   height: 50px;
   margin: calc(50% - 25px);
   background: white;
   border-radius: 25px;
   border-left: 10px solid wheat;
 }
+
 .content {
   position: absolute;
-  margin-left: 160px;
-  width: calc(100% - 200px);
+  margin-left: 150px;
+  width: calc(100% - 150px);
+  max-width: 1200px;
+
   height: 100%;
   padding: 20px;
   overflow: scroll;
-  transition: all 0.6s ease;
+  transition: all 0.2s ease;
 
   @media (max-width: 480px) {
     width: 100%;
     padding: 0;
   }
+
+  @media (min-width: 1350px) {
+    margin-left: calc(50% - 525px);
+  }
 }
+
 .header-img {
   width: 100%;
   height: 200px;
@@ -46,114 +53,5 @@
   &.green {
     background: mediumseagreen;
     h2 { color: aquamarine; }
-  }
-}
-.card {
-  padding: 5px 15px;
-  background: white;
-  border: 1px solid gainsboro;
-  box-shadow: 0 0 1px gainsboro;
-  margin: 5px 0;
-
-  &.text {
-    border-left: 6px solid indianred;
-    padding-right: 9px;
-    p {
-      padding: 15px 10px;
-      margin: 0;
-      font-size: 18px;
-    }
-  }
-  &[class*="span"] {
-    vertical-align: middle;
-    display: inline-block
-  }
-  &.span12 {
-    width: calc(100% - 34px);
-  }
-  &.span9 {
-    width: calc(75% - 35px);
-  }
-  &.span8 {
-    width: calc(66.667% - 35px);
-  }
-  &.span6 {
-    width: calc(50% - 35px);
-  }
-  &.span4 {
-    width: calc(33.33% - 35px);
-  }
-  &.span3 {
-    width: calc(25% - 35.5px);
-  }
-  @media (max-width: 480px) {
-    width: calc(100% - 34px) !important;
-  }
-}
-nav.site-menu {
-  float: left;
-  background: #334;
-  height: 100%;
-  width: 120px;
-  padding: 20px;
-  margin: 0;
-  transition: all 0.6s ease;
-  position: relative;
-
-  .hamburger {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    background: #334;
-    position: absolute;
-    right: -30px;
-    top: 0;
-    z-index: 1;
-    @media (min-width: 480px) {
-      display: none;
-    }
-  }
-
-  ul {
-    list-style-type: none;
-    font-size: 20px;
-    color: silver;
-    padding-left: 0;
-
-    li {
-      transition: padding-left 0.2s;
-      cursor: pointer;
-      margin: 5px;
-      margin-left: -15px;
-      padding-left: 15px;
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      &:hover,
-      &.active {
-        border-left: 2px solid white;
-        padding-left: 20px;
-      }
-    }
-  }
-
-  h1 {
-    font-size: 20px;
-    color: white;
-  }
-  &.hidden {
-    transition: all 0.6s;
-    margin-left: -160px;
-    ~ .content {
-      margin-left: 0px;
-    }
   }
 }

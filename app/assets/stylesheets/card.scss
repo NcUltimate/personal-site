@@ -1,0 +1,70 @@
+.card {
+  background: white;
+  border: 1px solid gainsboro;
+  box-shadow: 0 0 1px gainsboro;
+  margin: 5px 0;
+
+  a {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+
+    font-size: 18px;
+    color: #544;
+    text-decoration: none;
+    text-align: center;
+  }
+  .fa {
+    color: #baa;
+    font-size: 36px;
+    vertical-align: middle;
+  }
+  .hidden-xs {
+    a {
+      padding: 15px;
+    }
+    .fa {
+      position: absolute;
+      margin-top: -18px;
+      top: 50%;
+    }
+  }
+
+  &.text {
+    border-left: 6px solid indianred;
+    padding-right: 9px;
+    p {
+      padding: 15px 10px;
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+
+  &.me {
+    text-align: center;
+
+    > img {
+      max-width: 100%;
+      max-height: 150px;
+      min-height: 100px;
+      padding: 15px 0;
+      object-fit: cover;
+    }
+  }
+  
+  &.title {
+    border-left: 6px solid indianred;
+    padding: 10px 15px;
+
+    p {
+      font-size: 16px;
+      color: #555;
+      margin: 0;
+
+      &:first-child {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -4,7 +4,12 @@ html, body {
   margin: 0;
 }
 body {
-  font-family: "Raleway", 'Helvetica Neue', futura,  sans-serif;
-  background: #eee;
-  background-size: cover;
+  font-family: "Raleway", 'Helvetica Neue', futura,  sans-serif !important;
+  background: #eee !important;
+}
+hr {
+  border-color: #ccc !important;
+}
+.row {
+  margin: 0 !important;
 }

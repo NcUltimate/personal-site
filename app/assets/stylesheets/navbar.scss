@@ -1,0 +1,65 @@
+nav.site-menu {
+  float: left;
+  background: #334;
+  height: 100%;
+  padding: 20px;
+  margin: 0;
+  transition: all 0.6s ease;
+  position: relative;
+
+  .hamburger {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #334;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 1;
+    @media (min-width: 480px) {
+      display: none;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    font-size: 20px;
+    color: silver;
+    padding-left: 0;
+
+    li {
+      transition: padding-left 0.2s;
+      cursor: pointer;
+      margin: 5px;
+      margin-left: -15px;
+      padding-left: 15px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:hover,
+      &.active {
+        border-left: 2px solid white;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+    color: white;
+  }
+  &.hidden-left {
+    transition: all 0.2s;
+    margin-left: -148px;
+    ~ .content {
+      transition: all 0.6s;
+      margin-left: 0px;
+    }
+  }
+}
