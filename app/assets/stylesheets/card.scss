@@ -42,10 +42,12 @@
 
   &.me {
     text-align: center;
+    min-height: 125px;
+    padding: 0;
 
-    > img {
+    > img { 
       max-width: 100%;
-      max-height: 150px;
+      max-height: 124px;
       min-height: 100px;
       padding: 15px 0;
       object-fit: cover;
@@ -55,16 +57,25 @@
   &.title {
     border-left: 6px solid indianred;
     padding: 10px 15px;
+    color: #555;
 
+    h1, h2 {
+      color: inherit;
+      margin: 0;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 16px;
+      margin: 5px 0 10px;
+    }
     p {
       font-size: 16px;
-      color: #555;
+      color: inherit;
       margin: 0;
-
-      &:first-child {
-        font-size: 24px;
-        font-weight: bold;
-      }
     }
   }
 }

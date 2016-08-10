@@ -27,6 +27,30 @@
   }
 }
 
+.icon-text {
+  .text {
+    font-size: 16px;
+    h4 {
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+      list-style-type: circle;
+      li {
+        margin-top: 15px;
+      }
+    }
+  }
+  .icon {
+    text-align: center;
+    padding-top: 20px;
+    .fa {
+      font-size: 72px;
+      color: #555;
+    }
+  }
+}
+
 .header-img {
   width: 100%;
   height: 200px;
