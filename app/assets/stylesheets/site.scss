@@ -29,7 +29,7 @@
 
 .icon-text {
   .text {
-    font-size: 16px;
+    font-size: 18px;
     h4 {
       font-weight: bold;
     }
@@ -37,16 +37,22 @@
       padding-left: 20px;
       list-style-type: circle;
       li {
-        margin-top: 15px;
+        margin-top: 10px;
+        @media (max-width: 767px) {
+          margin-top: 15px;
+        }
       }
+    }
+    @media (max-width: 767px) {
+      font-size: 16px;
     }
   }
   .icon {
     text-align: center;
-    padding-top: 20px;
+    padding: 50px 0;
     .fa {
-      font-size: 72px;
-      color: #555;
+      font-size: 100px;
+      color: #766;
     }
   }
 }
