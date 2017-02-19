@@ -1,0 +1,16 @@
+.header-img.green
+  %h2.title Programming Sandbox
+%hr
+.card.text
+  %p This page is an experimental area of sorts for animations, apps, and everything in between that needed a home. 
+
+.card.img.col-sm-4
+  %a{ href: 'http://loading-css.herokuapp.com/', target: '_blank' }
+    = image_tag 'css_loaders'
+    %h3 Load Wow
+    %p A handful of single-element loading animations I made.
+
+.col-sm-8
+  = render partial: 'cinemagraphs/forest'
+.col-sm-8
+  = render partial: 'cinemagraphs/mountain'

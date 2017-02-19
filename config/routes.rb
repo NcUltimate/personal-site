@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get '/cv', to: 'site#cv'
   get '/blog', to: 'blog#index'
   get '/github', to: 'site#github'
-  get '/seo', to: 'site#seo'
+  get '/sandbox', to: 'site#sandbox'
 end

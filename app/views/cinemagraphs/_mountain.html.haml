@@ -1,0 +1,11 @@
+.card.cinemagraph
+  %svg#mountain
+    %radialGradient#northern_lights{ cx: '50%', cy: '50%', fx: '50%', fy: '40%', r: '50%'}
+      %stop{ offset: '0%', 'stop-color' => 'rgb(0, 255, 0)', 'stop-opacity' => '1'}
+      %stop{ offset: '100%', 'stop-color' => 'rgb(150,255,20)', 'stop-opacity' => '0'}
+    %radialGradient#smoke{ cx: '50%', cy: '50%', fx: '50%', fy: '50%', r: '50%'}
+      %stop{ offset: '0%', 'stop-color' => 'rgb(200,200,200)', 'stop-opacity' => '0.6'}
+      %stop{ offset: '100%', 'stop-color' => 'rgb(200,200,200)', 'stop-opacity' => '0'}
+    / %ellipse{ cx: '50%', cy: '50%', fill: 'url(#northern_lights)', opacity: '1', rx: '2.5%', ry: '25%'}
+    %circle{ cx: 'calc(100% - 50px)', cy: '215', fill: 'url(#smoke)', r: '10px'}
+  %h3 Mountain

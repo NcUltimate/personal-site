@@ -81,4 +81,19 @@
       }
     }
   }
+
+  &.img {
+    padding: 10px;
+    img {
+      width: 100%;
+    }
+    a {
+      padding: 0;
+      text-align: left;
+      text-decoration: none;
+    }
+    p {
+      color: #666;
+    }
+  }
 }

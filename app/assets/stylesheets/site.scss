@@ -7,14 +7,12 @@
 }
 
 .content {
-  position: absolute;
   margin-left: 150px;
   width: calc(100% - 150px);
   max-width: 1200px;
 
   height: 100%;
   padding: 20px;
-  overflow: scroll;
   transition: all 0.2s ease;
 
   @media (max-width: 480px) {

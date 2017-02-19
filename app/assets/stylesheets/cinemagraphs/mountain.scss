@@ -1,0 +1,13 @@
+#mountain {
+  background: url(asset-path('cinemagraphs/mountain.jpg'));
+  background-size: 730px 133%;
+  background-position: right -10px;
+  background-color: cyan;
+
+  .snowflake {
+    // opacity: 0.5;
+  }
+  + h3 {
+    margin-left: -40px;
+  }
+}
